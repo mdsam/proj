@@ -1,0 +1,19 @@
+<html>
+<body>
+
+<form method="post" form action="<?php echo $_SERVER["PHP_SELF"];?>">
+<form action="welcome.php" method="post">
+Name: <input type ="text" name="name"> <br>
+Email: <input type="text" name="email"> <br>
+Website: <input type="text" name="website"> <br>
+Comment: <textarea name="comment" rows="5" cols="40"></textarea> <br>
+Gender:
+<input type="radio" name="gender" value="female">Female
+<input type="radio" name="gender" value="male">Male
+
+
+<input type="submit">
+</form>
+
+</body>
+</html>

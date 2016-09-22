@@ -1,0 +1,55 @@
+<?php
+
+function authLdap($params = array()) {
+        $ldap_bind = "";
+        $ldap_resource = "";
+        $ldap_result = "";
+
+        $ldap_conn = ldap_connect("internal.directi.com");
+
+        if (is_resource($ldap_conn)) {
+            $ldap_bind = @ldap_bind($ldap_conn, $params['username'], $params['password']);
+
+            if ($ldap_bind) {
+                $ldap_resource = @ldap_search($ldap_conn, "cn={$params['username']},ou=tapestry,dc=internal,dc=directi,dc=com", "(name=*)");
+                if (is_resource($ldap_resource)) {
+                    $ldap_result = @ldap_get_entries($ldap_conn, $ldap_resource);
+                }
+                return TRUE;
+            }
+        } else {
+            return FALSE;
+        }
+    }
+
+authLdap(array("username" => $params['username'], "password" => $params['password']))
+
+
+?>
+
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Login.php</title>
+        <meta http-equiv="refresh" content="900">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+
+    </head>
+    <body>
+       
+<form class="form-signin" role="form" method="post" action="/login.php">
+        <input type="text" name="username" class="form-control" placeholder="ad username" required="" autofocus="">
+    <input type="password" name="password" class="form-control" placeholder="password" required="">
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+</form>
+
+
+<div class="branding">
+    Created by <a href="mailto: sanjeet.a@directi.com">Sanjeet Arora</a> &amp; <a href="mailto: pratik.j@directi.com">Pratik Jagdishwala</a>
+</div>
+</div>
+</div>
+
+</body>
+</html>

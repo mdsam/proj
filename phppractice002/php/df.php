@@ -1,0 +1,8 @@
+<?php
+
+header();
+echo hello;
+
+
+
+?>

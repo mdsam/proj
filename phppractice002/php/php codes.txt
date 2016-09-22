@@ -1,0 +1,32 @@
+
+--------------------------------------------------------------------------------------------------------
+AD Auth Code:
+
+function authLdap($params = array()) {
+        $ldap_bind = "";
+        $ldap_resource = "";
+        $ldap_result = "";
+
+        $ldap_conn = ldap_connect("internal.directi.com");
+
+        if (is_resource($ldap_conn)) {
+            $ldap_bind = @ldap_bind($ldap_conn, $params['username'], $params['password']);
+
+            if ($ldap_bind) {
+                $ldap_resource = @ldap_search($ldap_conn, "cn={$params['username']},ou=tapestry,dc=internal,dc=directi,dc=com", "(name=*)");
+                if (is_resource($ldap_resource)) {
+                    $ldap_result = @ldap_get_entries($ldap_conn, $ldap_resource);
+                }
+                return TRUE;
+            }
+        } else {
+            return FALSE;
+        }
+    }
+10:32 PM
+authLdap(array("username" => $params['username'], "password" => $params['password']))
+
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------

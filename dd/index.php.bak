@@ -1,0 +1,90 @@
+<?php 
+
+function check_ad_auth($username, $password) {
+
+
+    	$ldapconn = ldap_connect("inmudcr01.corp.endurance.com");
+
+      	     if (is_resource($ldapconn)) {
+
+            $ldapbind = @ldap_bind($ldapconn, $username."@corp.endurance.com", $password);
+
+            if ($ldapbind) {
+                
+                    $result_resource = @ldap_search($ldapconn, "cn={$username},ou=Accounts,dc=corp,dc=endurance,dc=com", "(name=*)");
+                    if (is_resource($result_resource)) {
+                        $result_info = @ldap_get_entries($ldapconn, $result_resource);
+                        // return $result_info[0]['memberof'];
+                        return TRUE;
+
+                    } else {
+
+                        return FALSE;
+                    }
+                
+            } else {
+
+                return FALSE;
+            }
+        } else {
+
+            return FALSE;
+        }
+    }
+
+
+
+
+extract($_POST);
+
+$username = $_POST['username'];
+$password = $_POST['password'];
+
+
+if(isset($submit)){
+
+
+	if(check_ad_auth($username, $password)){
+
+	echo "<h1 align=left>Welcome !</h1>";
+
+}else{
+
+	echo "<h1 align=left>Wrong Password</h1>";
+
+}
+
+}
+
+
+
+
+
+
+$output = "<h1 align='center'> Domain Deletion Tool </h1>";
+
+$output .= '<form  class="form" method="POST" action="" enctype="multipart/form-data">
+<p align ="center" >
+<label>Username </label>
+<input type="text" name="username" placeholder="username" required />
+</p>
+
+<p align ="center" >
+<label>Password</label>
+<input type="password" name="password" placeholder="password" required />
+</p>
+
+<p align ="center">
+<input  type="submit" name="submit" value="Submit"  />
+</p>
+
+
+
+</form>';
+
+echo $output;
+
+
+
+
+?>

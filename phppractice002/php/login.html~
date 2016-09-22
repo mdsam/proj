@@ -1,0 +1,24 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>login.php</title>
+        <meta http-equiv="refresh" content="900">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+
+    </head>
+    <body>
+       
+<form class="form-signin" role="form" method="post" action="/php/login.php">
+        <input type="text" name="username" class="form-control" placeholder="ad username" required="" autofocus="">
+    <input type="password" name="password" class="form-control" placeholder="password" required="">
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+</form>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

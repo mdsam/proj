@@ -1,0 +1,4286 @@
+-------------------------------------------------------------------
+21.11.2014
+<?php
+
+echo 'Hello World';
+
+?>
+-------------------------------------------------------------------
+
+$sometext = "Now";
+$sometext2 = " Now Too";
+$number = 32-2;
+$sum = 2;
+
+echo $sometext ."<Br>";
+echo $sometext2;
+echo $number && $sum;
+
+
+
+-------------------------------------------------------------------
+$first = 10;
+$second = 20;
+$third = 30;
+
+if ($third != $second) { echo "This is True" ; }
+else { echo "This is False"; }
+
+
+-------------------------------------------------------------------
+$var = "none";
+
+if ($var =="Steve") {echo " Hey Steve";}
+
+elseif ($var =="bria") {echo " hey bri";}
+
+else { echo " hey buddy";}
+
+-------------------------------------------------------------------
+$country = "USA";
+
+switch ($country)
+{
+
+		case "USA":
+			echo " Your are in USA";
+			break;
+		case "canada":
+			echo " Your are in japan";
+			break;
+		default:
+		echo " You messed up";
+		break;
+
+}
+
+-------------------------------------------------------------------
+$num = 1;
+
+while ($num<=10)
+{
+
+echo $num."<br/>";
+$num++;
+
+}
+
+-------------------------------------------------------------------
+
+$num=1;
+
+do
+{
+$num++;
+echo $num."<br>";
+
+}
+
+while ($num<10);
+
+-------------------------------------------------------------------
+for ($num=1; $num<=5; $num++)
+{
+echo " Hello World"."<br>";
+}
+
+-------------------------------------------------------------------
+$people = array ('tom','jack','tonny');
+
+$people [0] = "tom";
+$people [1] = "jack";
+$people [2] = "tonny";
+
+echo $people[0];
+
+-------------------------------------------------------------------
+$actions=array('fingers'=>'hand', 'toes'=>'foot', 'teeth'=>'mouth');
+
+echo $actions['fingers'];
+
+
+-------------------------------------------------------------------
+
+$name[0]="tom";
+$name[1]="greg";
+$name[2]="mike";
+
+
+echo $name[0];
+
+$name[0]= "test";
+
+echo $name[0];
+
+
+-------------------------------------------------------------------
+$test=array('tom','tony','greg','mike');
+
+for ($x=0; $x<sizeof($test); $x++)
+echo $test[$x] ."<br>";
+
+
+
+-------------------------------------------------------------------
+$test=array('one','two','three','four');
+
+foreach ($test as $x)
+echo $x;
+
+-------------------------------------------------------------------
+function testfun()
+
+	{
+
+		echo " Eays Hoss";
+
+	}
+
+echo " Take it";
+testfun();
+echo "<br>"."i said take it";
+testfun();
+
+-------------------------------------------------------------------
+function somefun($sub)
+
+{
+
+echo $sub."hoss <br/>";
+
+}
+
+somefun (" take it easy");
+somefun(" i said take it easy ");
+
+-------------------------------------------------------------------
+
+function somefun($sub)
+
+{
+
+echo $sub."hoss <br/>";
+
+}
+
+somefun (" take it easy");
+somefun(" i said take it easy ");
+
+
+-------------------------------------------------------------------
+function add ($a,$b)
+{
+
+$total = $a+$b;
+return $total;
+
+}
+
+echo add (8,2);
+
+
+-------------------------------------------------------------------
+
+<html>
+<body>
+
+
+<form action ="testpage.php" method="POST">
+Name: <input type="text" name="name" />
+<input type="submit" value=" Click Here "/>
+
+
+</form>
+</body>
+</html>
+
+
+
+
+
+-------------------------------------------------------------------
+25.11.2014
+
+
+$name='Alex';
+$age=20;
+
+if(strtolower($name)==='alex') {
+
+		if ($age>=21) {
+
+			echo 'you are over 21';
+			if (1===1) {
+
+				echo 'yes 1 is euqal to 1';
+
+			}
+			
+			} else {
+
+				echo 'Not Over 21';
+
+				}
+
+	} else {
+			echo ' You are not alex';
+
+		}
+
+-------------------------------------------------------------------
+<?php
+
+$text='Hello World';
+
+
+?>
+
+
+
+<html>
+<body>
+
+
+<input type="text" value="<?php echo $text; ?>">
+
+</body>
+</html>
+
+-------------------------------------------------------------------
+<input type="text" value="<?php echo $text; ?>">
+-------------------------------------------------------------------
+$_text="hello World";
+$number= 100;
+
+$day =' Thursdays';
+$date= 31;
+$year=2011;
+
+
+//echo $_text.$number;
+
+echo 'The date is '.$day.' '.$date.' '.$year;
+
+echo "The date is $day $date $year";
+-------------------------------------------------------------------
+27.11.2014
+
+$text= 'something';
+
+if ($text='something') {
+	echo 'TURE';
+}
+
+else {
+	echo 'FALSE';
+}
+-------------------------------------------------------------------
+$number = 8;
+
+if ($number==10) {
+	echo ' Equal to ten';
+	}
+else if ($number==9) {
+	echo 'Equal to nine';
+	}
+else {
+	echo ' not equal';
+	}
+-------------------------------------------------------------------
+$number =10;
+
+$result = $number + 2;
+
+echo $result;
+-------------------------------------------------------------------
+$text = 'Hello';
+
+$text .= ' World';
+
+echo $text;
+
+-------------------------------------------------------------------
+$number1=100;
+$number2=50;
+$number3=2;
+
+$result = ($number1 + $number2) / $number3;
+
+echo $result;
+
+-------------------------------------------------------------------
+$number = 1200;
+
+$upper = 1000;
+$lower = 500;
+
+if ($number >= $lower && $number<=$upper) {
+
+	echo ' Number must be between  '. $lower. ' and ' .$upper ;
+	}
+
+else {
+
+	echo ' OK'; 
+	}
+-------------------------------------------------------------------
+$num1 = 1;
+$num2= '1';
+
+if ($num1===$num2) {
+
+	 echo ' OK';
+	 
+	}
+
+	else {
+
+		echo ' Not Ok';
+		}
+-------------------------------------------------------------------
+$counter = 1;
+
+
+
+while ($counter<=10) {
+
+	echo $counter.' Hello <br>';
+	$counter++;
+	}
+-------------------------------------------------------------------
+$counter = 1;
+
+
+
+while ($counter<=10) {
+
+	echo $counter.' Hello <br>';
+	$counter++;
+	}
+-------------------------------------------------------------------
+$counter = 1;
+
+
+do {
+	echo ' This will always show once. <br>';
+	$counter++;
+	}
+while ($counter <=10);
+
+
+
+-------------------------------------------------------------------
+for ($count=1; $count<=10; $count++) {
+
+	 echo $count.'<br>';
+
+	}
+-------------------------------------------------------------------
+$number = 11;
+
+switch ($number) {
+
+		case 1:
+				echo 'one';
+
+		break;
+
+		case 2:
+				echo 'Two';
+
+		break;
+
+		case 3:
+				echo 'Three';
+
+		break;
+
+
+		default:
+				echo  ' Not Found';
+	}
+
+-------------------------------------------------------------------
+$day = 'saturday';
+
+switch ($day) {
+
+		case 'saturday':
+		case 'sunday':
+		
+				echo 'its a weekend';
+
+		break;
+
+		
+		default:
+				echo  ' Check code again';
+	}
+
+
+
+
+-------------------------------------------------------------------
+echo ' Hello';
+
+exit();
+
+echo 'World';
+
+-------------------------------------------------------------------
+
+function MyName() {
+
+	echo ' Do Something';
+
+
+	}
+echo ' Mehmood';
+
+Myname();
+
+-------------------------------------------------------------------
+28.11.2014
+$inumber1 =10;
+$inumber2 =15;
+
+function add($number1, $number2) {
+
+	echo $number1 + $number2;
+
+
+	}
+
+add ($inumber1,$inumber2);
+
+-------------------------------------------------------------------
+function displayDate ($day, $date, $year) {
+	echo $day.' '.$date.' '.$year;
+	}
+
+
+
+displayDate ('Monday', 31, 2011);
+
+
+-------------------------------------------------------------------
+
+function add($number1, $number2) {
+
+	$result = $number1 + $number2;
+
+	return $result;
+		
+	}
+
+function divide ($number1, $number2) {
+
+	$result = $number1 / $number2;
+
+	return $result;
+	}
+
+$sum = divide (add (10,10), add (5,5));
+
+
+
+
+echo $sum;
+
+
+-------------------------------------------------------------------
+$user_ip = $_SERVER ['REMOTE_ADDR'];
+
+function echoip() {
+	global $user_ip;
+	$string = ' Your IP Address is:'.$user_ip;
+
+	echo $string;
+
+	}
+
+
+echoip();
+-------------------------------------------------------------------
+$string = ' This is an example string';
+$string_word_count = str_word_count($string);
+
+echo $string_word_count;
+-------------------------------------------------------------------
+
+$string = 'Khan Mehmood Ali';
+$string_shuffle = str_shuffle($string);
+
+
+$string2 = 'abcdefghijklmnopqrstuvxyz';
+$string_shuffle2 = str_shuffle($string2);
+
+$half = substr ($string_shuffle2, 0, 5);
+
+
+$string3 = 'Khan Mehmood Ali';
+$string_rev = strrev($string3);
+
+
+
+echo $string_rev;
+
+
+
+-------------------------------------------------------------------
+$string_one = 'This is my essay. I am going to be talking about PHP.';
+$string_two = 'This is my essay. I will be talking about the subject PHP';
+
+similar_text($string_one, $string_two, $result);
+
+
+echo ' The similarity between is, ' .$result;
+-------------------------------------------------------------------
+
+$string = 'This is an example string';
+$string_length = strlen($string);
+
+echo $string_length;
+
+-------------------------------------------------------------------
+$string = 'This is an example string';
+$string_length = strlen($string);
+
+echo $string_length;
+
+
+-------------------------------------------------------------------
+$food = array('Healthy'=> array('Salad', 'Vegetables', 'Pasta'), 'Unhealthy'=> array('Pizza', 'Ice Cream')) ;
+
+echo $food ['Healthy'] [0];
+-------------------------------------------------------------------
+
+$food = array('Healthy'=> array('Salad', 'Vegetables', 'Pasta'), 'Unhealthy'=> array('Pizza', 'Ice Cream')) ;
+
+
+
+foreach ($food as $element => $inner_array) {
+
+	echo $element. '<br>';
+
+	foreach ($inner_array as $item) {
+
+	echo $item .'<br>';
+
+		}
+
+
+	}
+
+
+
+
+-------------------------------------------------------------------
+02.11.2014
+
+$offset = 0;
+$find = 'is';
+$find_length = strlen($find);
+
+
+$string = ' This is a string, and it is an example';
+
+
+while ($string_position = strpos ($string, $find, $offset)) {
+
+	echo $find.'found at' .$string_position.'<br>';
+
+	$offset = $string_position + $find_length;
+	
+	}
+
+
+-------------------------------------------------------------------
+$string = 'This past don\'t seacrh. This part search';
+$string_new = substr_replace($string, 'alex', 29, 4);
+
+echo $string_new;
+
+-------------------------------------------------------------------
+
+$find = array ('is','string','example');
+$string = ' This is a string, and is an example';
+
+$new_string = str_replace($find, '', $string);
+
+echo $new_string;
+
+-------------------------------------------------------------------
+$find = array ('is','string','example');
+$string = ' This is a string, and is an example';
+
+$replace =array('IS', 'STRING', '');
+
+
+$new_string = str_replace($find, $replace, $string);
+
+echo $new_string;
+-------------------------------------------------------------------
+$find = array ('alex', 'billy','dale');
+$replace = array ('a**x', 'b***y','d****e');
+
+if (isset($_POST['user_input']) && !empty($_POST['user_input'])) {
+
+	$user_input=$_POST['user_input'];
+	$user_input_lc = strtolower($user_input);
+	$user_input_new  = str_ireplace($find, $replace, $user_input);
+
+	echo $user_input_new;
+
+	} 
+?>
+
+
+
+
+<hr>
+
+
+
+<form action="testpage.php" method="POST">
+
+<textarea name = "user_input" rows="6" cols="30"> <?php echo $user_input; ?> </textarea> <br><br>
+<input type="submit" value="submit">
+
+
+</form>
+
+-------------------------------------------------------------------
+$offset = 0;
+
+if(isset($_POST['text']) && isset($_POST['searchfor']) && isset($_POST['replacewith'])) {
+
+	$text= $_POST['text'];
+	$search= $_POST['searchfor'];
+	$replace= $_POST['replacewith'];
+
+	if (!empty($text) && !empty($search) && !empty($replace)) {
+
+		echo ' Hellllo';
+
+		
+		} else {
+
+			echo ' Please fill in the details';
+			
+			}
+
+	}
+
+
+?>
+
+
+
+
+<hr>
+
+
+
+<form action="testpage.php" method="POST">
+
+<textarea name = "user_input" rows="6" cols="30"> </textarea> <br><br>
+
+Search For: <br><input type="text" name="searchfor"> <br><br>
+Replace For: <br> <input type="text" name="replacewith"> <br><br>
+
+<input type="submit" value="Find and Replace">
+
+
+</form>
+-------------------------------------------------------------------
+03.12.2014
+
+$time = time();
+$time_now = date ('d M Y @ H:i:s', $time);
+$time_modified = date ('d M Y @ H:i:s', strtotime ('+ 1 week'));
+
+echo ' The time now is '. $time_now.'<br> The modified time is '. $time_modified;
+
+//echo $actual_time;
+
+-------------------------------------------------------------------
+$rand= rand();
+
+$max = getrandmax();
+echo $rand . '/' .$max;
+-------------------------------------------------------------------
+if (isset($_POST['roll'])) {
+
+	$rand = rand(1, 5);
+
+	echo ' Your Roll No '.$rand;
+		
+	}
+	
+
+?>
+
+
+<form action= "testpage.php" method="POST">
+
+<input type="submit" name="roll" value="Roll dice">
+
+</form>
+
+-------------------------------------------------------------------
+<html>
+<body>
+
+
+<div id="form">
+
+<form name="form1" method="POST" action="registernext.php">
+	<P> Username: <input type="text" name="username" size="15" maxlength ="20" value="" /> </P>
+	<P> Password: <input type="password" name="pass" size="15" maxlength ="20" value="" /> </P>
+	<P> Confirm Password: <input type="password" name="pass2" size="15" maxlength ="20" value="" /> </P>
+	<P> Email: <input type="text" name="email" size="15" maxlength ="65" value="" /> </P>
+	<P> Confirm Email: <input type="text" name="email2" size="15" maxlength ="65" value="" /> </P>
+	<P> <input type="submit" name="submit" value="register" /> </P>
+
+
+</form>
+</div>
+</body>
+</html>
+
+-------------------------------------------------------------------
+
+include 'header.inc.php';
+
+if (isset($_POST['submit'])) {
+
+	echo ' Process 2';
+	}
+
+
+
+-------------------------------------------------------------------
+<?php ob_start(); ?>
+
+
+
+
+<h1> My Page</h1>
+This is my page.
+
+<?php
+
+
+
+
+$redirect_page = ' http://google.co.uk';
+$redirect = true;
+
+
+if($redirect == true) { header ('Location: ' .$redirect_page); } 
+
+
+
+ob_end_flush();
+-------------------------------------------------------------------
+<?php
+
+
+
+require 'conf.inc.php';
+
+foreach($ip_blocked as $ip){
+
+	if($ip===$ip_addresss) {
+
+		die(' Your IP Address, '.$ip_addresss.' Has Been Blocked');
+		}
+
+
+	}
+
+
+?>
+
+<h1> Welcome </h1>
+
+
+
+
+
+-------------------------------------------------------------------
+Faild:
+
+$http_client_ip = $_SERVER['HTTP_CLIENT_IP'];
+$http_x_forward_for = $_SERVER['HTTP_X_FORWARD_FOR'];
+$remote_add = $_SERVER['REMOTE_ADDR'];
+
+
+if (!empty($http_client_ip)) {
+
+	$ip_addresss = $http_client_ip;
+
+} else if (!empty ($http_x_forward_for)) {
+
+	$ip_addresss = $http_x_forward_for;
+	
+} else {
+
+
+	$ip_addresss = $remote_add;
+
+	}
+
+
+
+
+echo $ip_addresss;
+
+
+-------------------------------------------------------------------
+$browser = get_browser(null, true);
+
+$browser = strtolower($browser['Browser']);
+
+if($browser!='chrome') {
+
+		echo ' Your are not using google chrome. please do!';
+
+	}
+
+-------------------------------------------------------------------
+*
+1. Does it exist ? or " Has it been submitted?"
+2. Is it empty ? or " Does value == NULL"
+3. Display back to user.
+*/
+
+
+if(isset($_GET['day']) && isset($_GET['date']) && isset($_GET['year'])) {
+
+	$day= $_GET['day'];
+	$date= $_GET['date'];
+	$year= $_GET['year'];
+
+	if (!empty($day) && !empty($date) && !empty($year)) {
+
+		echo 'ok';
+
+		
+		} else {
+
+				echo 'Fill the details';
+			}
+	
+	}
+
+
+?>
+
+<form action = "testpage.php" method="GET">
+	Day:<br><input type ="text" name="day"><br>
+	Date:<br><input type ="text" name="date"><br>
+	Year:<br><input type ="text" name="year"><br><br>
+	<input type="submit" value="submit">
+</form>
+
+-------------------------------------------------------------------
+$match ='pass123';
+
+if(isset($_POST['password'])) {
+
+	$password =$_POST['password'];
+
+	if ($password == $match) {
+
+		echo 'Macthed';
+		} else {
+
+		echo 'Not Machthed';
+		
+			}
+
+	}
+
+?>
+
+
+<form action = "testpage.php" method="POST">
+
+Password:<br>
+<input type="password" name="password"> <br><br>
+<input type="submit" value="submit">
+
+</form>
+
+-------------------------------------------------------------------
+<?php
+
+if (isset($_GET['day']) && isset($_GET['date']) && isset($_GET['year'])) {
+
+	$day = htmlentities ($_GET['day']);	
+	$date = htmlentities ($_GET['date']);
+	$year = htmlentities ($_GET['year']);
+
+	if (!empty($day) && !empty($day)&& !empty($year)) {
+
+		echo 'Its' .$day.'' .$date. ''.$year;
+
+		} else {
+
+			echo  ' fill the all details';
+			}
+
+
+	}
+
+
+?>
+
+
+<form action="testpage" method="GET">
+
+	Day:<br><input type="text" name="day"> <br>
+	Date:<br> <input type="text" name="date"> <br>
+	Year: <br><input type="text" name="year"> <br><br><br>
+
+	<input type="submit" value="submit">
+
+
+</form>
+
+-------------------------------------------------------------------
+session_start();
+$_SESSION['username']='alex';
+
+
+session_start();
+if (isset($_SESSION['username'])) {
+
+		
+		echo ' Welcome, '. $_SESSION['username'];
+
+	} else {
+
+		echo  ' Please log in.';
+			
+		}
+
+
+session_start();
+unset ($_SESSION['username']);
+-------------------------------------------------------------------
+$cookies= $_COOKIE['username'];
+echo $cookies;
+
+
+unsetcookie ('username', 'alex', '10');
+
+
+$time = time();
+
+setcookie('username', 'alex', '10');
+
+-------------------------------------------------------------------
+$handle = fopen ('names.txt', 'w');
+
+fwrite ($handle, 'Billy'. "\n");
+fwrite ($handle, 'Alex' . "\n");
+
+
+
+fclose($handle);
+
+
+echo ' Written';
+
+-------------------------------------------------------------------<?php
+
+if(isset($_POST['name'])) {
+	$name = $_POST['name'];
+
+	if(!empty($name)) {
+
+		$handle = fopen ('names.txt', 'a');
+		fwrite ($handle, $name. "\n");
+		fclose ($handle);
+
+
+		$readin = file('names.txt');
+		foreach ($readin as $fname) {
+
+			echo $fname. ',';
+
+			}
+
+
+
+		} else {
+
+			'Please type a name';
+
+			}
+
+
+
+
+	}
+
+
+
+
+
+?>
+
+
+<form action="file.php" method="POST">
+
+	Name : <input type="text" name="name">
+	<input type="submit" value="submit">
+
+</form>
+-------------------------------------------------------------------
+if(isset($_POST['name'])) {
+
+	$name = $_POST['name'];
+
+	if(!empty($name)) {
+
+		$handle = fopen ('names.txt', 'a');
+		fwrite ($handle, $name. "\n");
+		fclose($handle);
+
+		} else {
+
+
+			echo ' Please type a name';
+			}
+	}
+
+?>
+
+<form action ="file.php" method="POST">
+
+Name: <br>
+
+<input type="text" name="name"> <br><br>
+<input type="submit" value="submit"> <br><br><br>
+
+</form>
+
+-------------------------------------------------------------------
+$filename = 'names.txt';
+$handle = fopen($filename, 'r');
+$datain= fread($handle, filesize($filename));
+
+$names_array = explode(',', $datain);
+
+foreach ($names_array as $name) {
+
+		echo $name. '<br>';
+	}
+
+-------------------------------------------------------------------
+04.12.2014
+
+<?php
+
+
+$filename = 'names.txt';
+$handle = fopen($filename, 'r');
+$datain= fread($handle, filesize($filename));
+
+$names_array = explode(',', $datain);
+
+foreach ($names_array as $name) {
+
+		echo $name. '<br>';
+	}
+
+
+
+
+
+
+
+
+?>
+
+-------------------------------------------------------------------
+<?php
+
+
+$directory = 'files';
+
+if ($handle = opendir($directory. '/')) {
+
+	echo ' Looking inside '.$directory. ':<br> ';
+
+	while ($file = readdir($handle)) {
+
+		if ($file!='.' && $file!='..')
+
+		echo '<a href="'.$directory. '/' .$file.'">'.$file. '</a> <br>';
+		
+		}
+
+	}
+
+?>
+
+-------------------------------------------------------------------
+<?php
+
+$filename = 'file.txt';
+
+if (file_exists($filename)) {
+
+	echo ' File already exists';
+
+	} else {
+
+		$handle = fopen ($filename, 'w');
+		fwrite ($handle, 'Nothing');
+		fclose ($handle);
+	
+		}
+?>
+
+-------------------------------------------------------------------
+$filename = 'file.txt';
+
+if (file_exists($filename)) {
+
+	echo ' File already exists';
+
+	} else {
+
+		$handle = fopen ($filename, 'w');
+		fwrite ($handle, 'Nothing');
+		fclose ($handle);
+	
+		}
+-------------------------------------------------------------------
+<?php
+
+$filename = 'Filetodelete.txt';
+
+if (unlink($filename)) {
+
+		echo ' File'. $filename.' has been deleted';
+	
+	} else {
+
+		echo  ' File can not found';
+		
+		}
+
+?>
+
+-------------------------------------------------------------------
+$filename = 'filetorename.txt';
+$rand = rand(10000, 99999);
+
+
+rename ($filename, $rand.'.txt'); {
+
+		echo' File ' .$filename. ' has been renamed to ' .$rand. '.txt';
+
+	}
+
+-------------------------------------------------------------------
+function hit_count() {
+
+	$filename = 'count.txt';
+	$handle = fopen($filename, 'r');
+	$current = fread($handle, filesize($filename));
+	fclose($handle);
+
+	$current_inc = $current + 1;
+
+	$handle = fopen ($filename, 'w');
+	fwrite ($handle, $current_inc);
+	fclose($handle);
+
+	
+
+	}
+
+
+-------------------------------------------------------------------
+include 'count.php';
+
+hit_counter();
+
+-------------------------------------------------------------------
+05.12.2014
+
+<?php
+
+
+$to = 'strngr08@gmail.com';
+$subject = ' This is an email';
+$body = ' This is a test email. Hope you got it';
+$header = ' From: phpacademy <strngr08@gmail.com>';
+
+if (mail($to, $subject, $body, $header)) {
+
+		echo  ' Email has been sent '. $to;
+
+		} else {
+
+
+		echo ' There was an error sending the mail';
+			}
+
+
+
+?>
+-------------------------------------------------------------------
+<?php
+
+	$contactname= $_POST['contact_name'];
+	$contactemail= $_POST['contact_email'];
+	$message= $_POST['contact_text'];
+		
+if(isset($contactname) && isset($contactemail) && isset($message)) {
+
+	if(!empty($contactname) && !empty($contactemail) && !empty($message)){
+
+		if(strlen($contactname)>25 || strlen($contactemail)>50 || strlen($message)>1000){
+
+			echo ' Sorry max length for each field excedded';
+
+			}else {
+		$to = 'strngr08@gmail.com';
+		$subject = ' Contact form has been submitted';
+		$body = $message;
+		$header = $contactname."\n".$contactemail;
+
+		if (@mail($to, $subject, $body, $header)) {
+
+			echo ' Thanks For Contacting us';
+
+			} else {
+
+				echo ' Error Occured, please try later';
+				
+				}
+
+			}
+		
+		} else {
+
+			echo ' All Fileds are required';
+			}
+		
+
+	}
+
+
+
+?>
+
+<form action ="conact.php" method="POST">
+
+		Name:<br> <input type="text" name="contact_name" maxlength="25"><br><br>
+		Email address:<br><input type="text" name="contact_email" maxlength="50"><br><br>
+		Message:<br>
+		<textarea name="contact_text" rows="6" cols="30" maxlength="1000"></textarea><br><br>
+		<input type="submit" value="Send">
+</form>
+-------------------------------------------------------------------
+<?php
+
+$xml =simplexml_load_file('example.xml');
+
+
+echo $xml->producer[1]->name. $xml->producer[1]->age;
+
+?>
+-------------------------------------------------------------------
+<?php
+
+require 'connect.inc.php';
+$user_ip = $_SERVER['REMOTE_ADDR'];
+
+function ip_exist($ip) {
+
+	global $user_ip;
+
+	$query = " SELECT ip FROM hits_ip WHERE ip ='$user_ip'";
+	$query_run = mysql_query($query);
+	$query_num_rows = mysql_num_rows($query_run);
+
+	if($query_num_rows==0) {
+
+		return false;
+		
+		}else if ($query_num_rows>=1) {
+
+			return true;
+			}
+			
+
+	}
+
+
+function  ip_add($ip) {
+
+	$query = "INSERT INTO hits_ip VALUES ('$ip')";
+	$query_run = mysql_query($query);
+	
+
+	}
+
+function update_count() {
+	$query = "SELECT  count FROM hits_count ";
+		if ($query_run = mysql_query($query)) {
+
+		$count = mysql_result($query_run, 0, 'count');
+
+		$count_inc = $count + 1 ;
+
+
+
+		$query_update = "UPDATE hits_count SET count = $count_inc ";
+		$query_update_run = mysql_query($query_update);
+
+		
+
+		} 
+
+	}
+
+
+//update_count();
+
+if (!ip_exist($user_ip)) {
+	update_count();
+	ip_add($user_ip);
+	} 
+
+
+?>
+
+-------------------------------------------------------------------
+<?php
+
+require 'connect.inc.php';
+$user_ip = $_SERVER['REMOTE_ADDR'];
+
+function ip_exist($ip) {
+
+	global $user_ip;
+	$query = " SELECT ip FROM hits_ip WHERE ip ='$user_ip'";
+	$query_run = mysql_query($query);
+	$query_num_rows = mysql_num_rows($query_run);
+
+	if($query_num_rows==0) {
+
+		return false;
+		
+		}else if ($query_num_rows>=1) {
+
+			return true;
+			}
+			
+
+	}
+
+
+function  ip_add($ip) {
+	$query = "INSERT INTO hits_ip VALUES ('$ip')";
+	$query_run = mysql_query($query);
+	
+
+	}
+
+function update_count() {
+	$query = "SELECT  count FROM hits_count ";
+		if ($query_run = mysql_query($query)) {
+
+		$count = mysql_result($query_run, 0, 'count');
+
+		$count_inc = $count + 1 ;
+
+
+
+		$query_update = "UPDATE hits_count SET count = $count_inc ";
+		$query_update_run = mysql_query($query_update);
+
+		
+		} 
+	}
+//update_count();
+if (!ip_exist($user_ip)) {
+	update_count();
+	ip_add($user_ip);
+	} 
+?>
+
+-------------------------------------------------------------------
+10.12.2014
+
+
+<?php
+
+header('Content-type:image/jpeg');
+
+if(isset($_GET['email'])) {
+
+	$email = $_GET['email'];
+
+	}else {
+		
+	$email = 'No email specified';
+
+		}
+
+$email_length = strlen($email);
+
+$font_size = 4;
+
+$image_height = ImageFontHeight($font_size);
+$image_width = ImageFontWidth($font_size) * $email_length;
+
+
+$image =imagecreate($image_width, $image_height);
+
+imagecolorallocate($image, 255, 255,255);
+
+$font_color = imagecolorallocate($image, 0, 0, 0);
+
+imagestring($image, $font_size, 0, 0, $email, $font_color);
+imagejpeg($image)
+
+
+?>
+
+-------------------------------------------------------------------
+
+Name:<br>
+Alex
+<br><br>
+Email:<br>
+<image src="generate.php?email=example@example.com" />
+
+
+-------------------------------------------------------------------
+<?php
+
+
+session_start();
+
+$_SESSION['secure'] = rand(1000, 9999);
+
+
+
+?>
+
+<img src="genrte.php" />
+
+-------------------------------------------------------------------
+<?php
+
+header('content-type:image/jpeg');
+
+
+if (isset($_GET['image'])) {
+
+	$image = $_GET['image'];
+
+	$image_size = getimagesize($image);
+	$image_width = $image_size[0];
+	$image_height = $image_size[1];
+
+	$new_size = ($image_width + $image_height)/($image_width*($image_height/45));
+
+	$new_width = $image_width * $new_size;
+	$new_height = $image_height * $new_size;
+
+	$new_image = imagecreatetruecolor($new_width, $new_height);
+	$old_image = imagecreatefromjpeg($image);
+
+	imagecopyresized ($new_image, $old_image, 0, 0, 0, 0, $new_width, $new_height, $image_width, $image_height);
+
+	imagejpeg ($new_image);
+
+	
+
+	}
+
+
+
+
+
+?>
+
+-------------------------------------------------------------------
+<?php
+
+header('content-type:image/jpeg');
+
+
+if (isset($_GET['image'])) {
+
+	$image = $_GET['image'];
+
+	$image_size = getimagesize($image);
+	$image_width = $image_size[0];
+	$image_height = $image_size[1];
+
+	$new_size = ($image_width + $image_height)/($image_width*($image_height/45));
+
+	$new_width = $image_width * $new_size;
+	$new_height = $image_height * $new_size;
+
+	$new_image = imagecreatetruecolor($new_width, $new_height);
+	$old_image = imagecreatefromjpeg($image);
+
+	imagecopyresized ($new_image, $old_image, 0, 0, 0, 0, $new_width, $new_height, $image_width, $image_height);
+
+	imagejpeg ($new_image);
+
+	
+
+	}
+
+
+
+
+
+?>
+
+-------------------------------------------------------------------
+<html>
+<head>
+<script type="text/javascript">
+
+function load() {
+
+	if(window.XMLHttpRequest) {
+
+	xmlhttp = new XMLHttpRequest
+	}
+
+</script>
+
+
+</head>
+<body>
+
+
+<input type="submit" onclick="load();">
+<div id="adiv"> </div>
+
+</body>
+
+
+</html>
+
+-------------------------------------------------------------------
+<html>
+	<head>
+
+
+	<script type="text/javascript">
+
+	function findmatch() {
+
+	if(window.XMLHttpRequest) {
+		xmlhttp= new XMLHttpRequest();
+
+		}
+
+		}
+
+		
+	</script>
+	
+</head>
+<body>
+
+
+<form id="search" name="search">
+
+Type a name:<br>
+<input type="text" name="keyword" onkeydown="findmatch(); ">
+
+</form>
+
+<div id= "result"> </div>
+
+</body>
+</html>
+
+-------------------------------------------------------------------
+11.12.2014
+
+<html>
+<head>
+<script type="text/javascript">
+
+function insert() {
+
+
+text_value = document.getElementById ('insert_text').value;
+alert(text_value);
+
+
+}
+
+</script>
+
+	
+	
+</head>
+<body>
+
+Insert: <input type="text" id="insert_text"> <input type= "button" value="Submit" onclick="insert();">
+
+
+</body>
+</html>
+
+-------------------------------------------------------------------
+$age = 21;
+
+try {
+
+	if($age>18) {
+
+		echo ' Old Enough';
+
+		}else {
+
+			throw new Exception ('Not Old Enough');
+
+			}
+
+
+
+
+	} catch (Exception $ex) {
+
+		echo 'Error:'.$ex->getMessage();
+
+		}
+
+
+
+-------------------------------------------------------------------
+$age = 21;
+
+try {
+
+	if($age>18) {
+
+		echo ' Old Enough';
+
+		}else {
+
+			throw new Exception ('Not Old Enough');
+
+			}
+
+
+
+
+	} catch (Exception $ex) {
+
+		echo 'Error:'.$ex->getMessage();
+
+		}
+
+
+-------------------------------------------------------------------
+$mysql_host = 'localhost';
+$mysql_user = 'root';
+$mysql_pass = 'wss';
+$mysql_db = 'phtp_test';
+
+
+class SeverException extends Exception ()
+class DatabaseException extends Exception ()
+
+try {
+
+	if (!@mysql_connect ($mysql_host, $mysql_user, $mysql_pass)) {
+
+		throw new ServerException ('Could not connect to server');
+
+		}else if (!@mysql_select_db($mysql_db)) {
+
+		throw new DatabaseException ('Could not connect to DB');
+		
+		}else {
+
+
+			echo 'connected';
+			
+			}
+
+
+	} catch (ServerException $ex) {
+
+		echo 'Error:'.$ex->getMessage();
+	
+	}catch (DatabaseException $ex) {
+
+		echo 'Error:'.$ex->getMessage();
+	}
+-------------------------------------------------------------------
+class SeverException extends Exception ()
+class DatabaseException extends Exception ()
+
+try {
+
+	if (!@mysql_connect ($mysql_host, $mysql_user, $mysql_pass)) {
+
+		throw new ServerException ('Could not connect to server');
+
+		}else if (!@mysql_select_db($mysql_db)) {
+
+		throw new DatabaseException ('Could not connect to DB');
+		
+		}else {
+
+
+			echo 'connected';
+			
+			}
+
+
+	} catch (ServerException $ex) {
+
+		echo 'Error:'.$ex->getMessage();
+	
+	}catch (DatabaseException $ex) {
+
+		echo 'Error:'.$ex->getMessage();
+	}
+-------------------------------------------------------------------
+<?php
+
+/*
+function divide($num1, $num2){
+
+	if ($num==0){
+
+		throw new Exception ('Cannot divide by zero.');
+		
+		}else {
+
+			return $num1/$num2;
+		
+			}
+
+	}
+
+echo divide(10, 0);
+*/
+
+
+
+$mysql_host = 'localhost';
+$mysql_user = 'root';
+$mysql_pass = 'wss';
+$mysql_db = 'phtp_test';
+
+
+class SeverException extends Exception ()
+class DatabaseException extends Exception ()
+
+try {
+
+	if (!@mysql_connect ($mysql_host, $mysql_user, $mysql_pass)) {
+
+		throw new ServerException ('Could not connect to server');
+
+		}else if (!@mysql_select_db($mysql_db)) {
+
+		throw new DatabaseException ('Could not connect to DB');
+		
+		}else {
+
+
+			echo 'connected';
+			
+			}
+
+
+	} catch (ServerException $ex) {
+
+		echo 'Error:'.$ex->getMessage();
+	
+	}catch (DatabaseException $ex) {
+
+		echo 'Error:'.$ex->getMessage();
+	}
+
+
+
+?>
+
+-------------------------------------------------------------------
+class BankAccount {
+
+
+public $balance = 10.5;
+
+public function DisplayBalance () {
+
+	return ' Balance:' .$this->balance;
+
+	}
+
+	
+
+}
+
+$alex = new BankAccount;
+echo $alex->DisplayBalance();
+
+-------------------------------------------------------------------
+<?php
+
+class BankAccount {
+
+
+public $balance = 10.5;
+
+public function DisplayBalance () {
+
+	return ' Balance:' .$this->balance;
+
+	}
+
+public function Withdraw($amount) {
+
+
+	if (($this->balance) < $amount ) {
+
+	echo ' Not Enough Money';
+
+}else {
+
+	$this->balance = $this->balance -$amount;
+
+}
+
+}
+
+}
+
+
+//new instance of class
+$alex = new BankAccount;
+
+
+// Withdrwaing 5
+$alex->Withdraw(12);
+
+
+//display balance
+echo $alex->DisplayBalance();
+
+?>
+
+-------------------------------------------------------------------
+class Example {
+
+	public function __construct  ($somehing) {
+		$this->SaySomething($something);
+
+		}
+
+
+	public function Saysomething ($something) {
+		echo $something;
+
+		}
+
+
+	}
+
+
+$Example = new Example ('Some text');
+
+-------------------------------------------------------------------
+
+
+class DatabaseConnect {
+
+	public function _construct ($db_hostt, $db_username, $db_password) {
+
+		echo $db_host.'<br>'.$db_username.'<br>'.$db_password;
+
+		if(!@$this->Connect($db_hostt, $db_username, $db_password)){
+
+			echo ' connetion failes'
+
+		}else {
+
+			echo ' connect to.' .$db_host;
+
+
+			}
+
+	public function Connect($db_hostt, $db_username, $db_password){
+
+		
+	
+		}
+
+	}
+
+
+//$connect = new DatabaseConnect('localhost', 'root', 'wss');
+
+
+
+-------------------------------------------------------------------
+12.12.2014
+
+<script type="text/javascript">
+
+	
+var tuna = true;
+document.write(tuna);
+
+
+
+</script>
+-------------------------------------------------------------------
+var name = "bucky";
+var age= 23;
+
+document.write(name + " is my name");
+
+-------------------------------------------------------------------
+
+<script type="text/javascript">
+
+	function funcky(){
+
+		alert ("Oucch !");
+
+		}
+
+
+
+
+</script>
+
+
+<form>
+
+<input type="button" value="touch me" onclick ="funcky()">
+
+</form>
+-------------------------------------------------------------------
+
+<script type="text/javascript">
+
+	function meatball(x) {
+
+		alert("i love"+ x);
+
+		}
+		
+
+meatball("bacon");
+meatball("good will hunting");
+
+-------------------------------------------------------------------
+
+	function meatball(one, two) {
+
+		document.write (one + "is better than " + two + "<br/>");
+
+		}
+		
+
+meatball("bucky", "hobart");
+-------------------------------------------------------------------
+function addnumbers(a,b) {
+
+	var c = a+b;
+	return c;
+
+	}
+
+document.write(addnumbers(3,7));
+-------------------------------------------------------------------
+function doFirst() {
+
+	document.write ("i am first bo!");
+	
+	}
+
+function doSecond() {
+
+	document.write ("222222!!!");
+	
+	}
+
+
+function start() {
+
+	doFirst();
+	doSecond();
+	
+	}
+
+
+start();
+-------------------------------------------------------------------
+function spit() {
+
+	var girl = " kelsey";
+
+	document.write(girl);
+
+	}
+
+spit();
+document.write(girl);
+-------------------------------------------------------------------
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+
+
+document.write("hey now brown cow");
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
+
+-------------------------------------------------------------------
+<?php
+
+require 'connect.inc.php';
+require 'core.inc.php';
+
+if (logdin()) {
+
+
+	$firstname = getuserfield('firstname');
+	$suranme = getuserfield('suranme');
+
+	
+	echo 'You are logdin. '.$firstname.''.$suranme.' <a href ="logout.php"> Log Out </a> <br>';
+
+	
+
+
+} else {
+
+	include 'loginform.php';
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+?>
+
+-------------------------------------------------------------------
+index.php:
+<?php
+require 'core.inc.php';
+require 'connect.inc.php';
+
+if (logdin()){
+
+	echo ' You are logged in, '.$firstname.'. <a href="logout.php">logout</a>';
+	echo  getuserfield('firstname');
+	
+	} else {
+
+include 'loginform.php';
+
+}
+
+?>
+-----------------------------------------------------
+loginform.php:
+<?php
+
+if(isset($_POST['username'])&&isset($_POST['password'])){
+	$username = $_POST['username'];
+	$password = $_POST['password'];
+	$password_hash = md5($password);
+	
+		if(!empty($username)&&!empty($password)) {
+
+		$query = "SELECT id FROM user WHERE username='$username' AND password='$password_hash'";
+		if($query_run = mysql_query($query)) {
+
+			$query_num_rows = mysql_num_rows($query_run);
+			
+			if($query_num_rows==0) {
+
+				echo ' Invalid username and password.';
+				
+				}else if ($query_num_rows==1) {
+
+				$user_id = mysql_result($query_run, 0, 'id');
+
+				$_SESSION['user_id']=$user_id;
+				header('Location:index.php');
+
+					}
+
+		}
+
+		}else {
+
+		echo 'You must supply username and password';
+		
+
+		}
+	
+	}
+
+?>
+
+<form action ="<?php echo $current_file ; ?>" method="POST">
+
+Username: <input type="text" name="username">
+Password: <input type="password" name="password">
+<input type="submit" value="LOGIN">
+
+</form>
+
+-----------------------------------------------------
+core.inc.php:
+<?php
+ob_start();
+session_start();
+$current_file = $_SERVER['SCRIPT_NAME'];
+
+if(isset ($_SERVER['HTTP_REFERER']) && !empty($_SERVER['HTTP_REFERER'])) {
+$http_referer = $_SERVER['HTTP_REFERER'];
+}
+
+function logdin() {
+if (isset($_SESSION['user_id']) &&!empty($_SESSION['user_id'])) {
+
+		return true;
+
+	}else {
+			return false;
+
+		}
+
+	}
+
+
+function getuserfield($field) {
+
+	$query = "SELECT firstname, surname FROM user WHERE id='".$_SESSION['user_id']."'";
+
+	if($query_run = mysql_query($query)) {
+
+		if ($query_result = mysql_result ($query_run, 0, 'firstname')) {
+
+			return $query_result;
+
+			}
+
+		}
+		}
+	
+?>
+-----------------------------------------------------
+logout.php:
+<?php
+require 'core.inc.php';
+session_destroy();
+header('Location:'.$http_referer);
+
+?>
+-----------------------------------------------------
+register.php:
+<?php
+require 'core.inc.php';
+require 'connect.inc.php';
+
+if(!logdin()) {
+
+if(
+isset($_POST['username']) && isset($_POST['password']) && isset($_POST['password_again']) &isset($_POST['firstname']) &&  isset($_POST['surname'])) {
+
+$username = $_POST['username'];
+$password = $_POST['password'];
+$password_again = $_POST['password_again'];
+$password_hash = md5($password);
+$firstname = $_POST['firstname'];
+$surname = $_POST['surname'];
+
+if(!empty($username) && !empty($password) && !empty($password_again) && !empty($firstname) && !empty($surname)) {
+
+	if ($password!=$password_again) {
+
+		echo 'password do not match';
+		
+		} else {
+
+	$query = "SELECT username FROM user WHERE username ='$username'";
+	$query_run = mysql_query($query);
+
+	if (@mysql_num_rows($query_run)==1) {
+
+			echo ' The Username '.$username. ' already exist.';
+
+		}else {
+
+	$query = "INSERT INTO user VALUES ('','".mysql_real_escape_string($username)."','".mysql_real_escape_string($password_hash)."','".mysql_real_escape_string($firstname)."','".mysql_real_escape_string($surname)."')";
+
+			if ($query_run = mysql_query($query)) {
+
+				header ('location: register_success.php');
+
+				}else {
+
+
+				echo 'sorry we could not register you this time';
+					}
+			}
+
+			}
+
+	} else {
+
+		echo ' Please filled all fields';
+
+		}
+
+}
+
+?>
+
+<form action ="register.php" method="POST">
+Username: <br> <input type="text" name="username" maxlength = "40" value = " <?php if(isset ($username)) {echo $username; } ?> "><br><br>
+Password: <br> <input type="password" name="password" maxlength = "40"><br><br>
+Password again: <br> <input type="password" name="password_again" maxlength = "40"><br><br>
+Firstname: <br> <input type="text" name="firstname" maxlength = "40"><br><br>
+Surname: <br> <input type="text" name="surname" maxlength = "40"><br><br>
+<input type="Submit" value="Register">
+
+</form>
+
+<?php
+
+	} else if (logdin()) {
+
+
+		echo ' You are already logd in';
+
+		}
+
+?>
+
+-----------------------------------------------------
+-------------------------------------------------------------------
+function add($number1, $number2){
+
+		$result = $number1 + $number2;
+		return $result;
+
+	}
+
+
+function divide($number1, $number2 ){
+
+	$result = $number1 / $number2 ;
+	return $result;
+
+	}
+
+
+$sum = divide (add(10,10), add(5,5));
+
+echo $sum;
+-------------------------------------------------------------------
+function add($number1, $number2){
+
+		$result = $number1 + $number2;
+		return $result;
+
+	}
+
+
+function divide($number1, $number2 ){
+
+	$result = $number1 / $number2 ;
+	return $result;
+
+	}
+
+
+$sum = divide (add(10,10), add(5,5));
+
+echo $sum;
+
+
+
+echo $user_ip = $_SERVER['REMOTE_ADDR'];
+-------------------------------------------------------------------
+$food = array('Healthy'=> array ('salad', 'vegetales', 'pasta'), 'Unhealthy'=>array ('pizza', 'ice cream'));
+
+
+foreach ($food as $element => $inner_array) {
+
+	echo $element.'<br>';
+
+foreach ($inner_array as $item) {
+
+	echo $item.'<br>';
+
+	}
+
+	}
+
+
+-------------------------------------------------------------------
+<?php
+
+class BankAccount{
+	public $balance = 10.5;
+
+	public function DisplayBal() {
+
+	return 'Balance:'.$this->balance;
+
+	}
+
+
+	}
+
+$alex = new BankAccount;
+echo $alex -> DisplayBal();
+
+
+
+
+
+
+?>
+
+-------------------------------------------------------------------
+class BankAccount {
+
+	public $balance = 100;
+
+	public function DisplayBalance() {
+
+		return ' Balance:'.$this->balance;
+
+		}
+
+	public function Withdraw($amount) {
+
+		if (($this->balance)<$amount) {
+
+			echo ' Not Enough Money';
+			
+			}else {
+
+			$this->balance = $this->balance - $amount;
+	
+				}
+		} 
+
+
+	public function Deposit($amount){
+
+		$this->balance = $this->balance + $amount;
+
+		}
+
+
+
+	}
+
+
+
+
+
+$alex = new BankAccount;
+$alex->Withdraw(12);
+echo $alex->DisplayBalance();
+-------------------------------------------------------------------
+<?php
+
+
+class BankAccount {
+
+	public $balance = 0;
+
+	public function DisplayBalance() {
+		return ' Balance:'.$this->balance;
+
+		}
+
+	public function Withdraw($amount) {
+		if (($this->balance)<$amount) {
+
+			echo ' Not Enough Money';
+			
+			}else {
+
+			$this->balance = $this->balance - $amount;
+	
+				}
+		} 
+
+
+	public function Deposit($amount){
+		$this->balance = $this->balance + $amount;
+
+		}
+
+
+
+	}
+
+
+
+
+
+//$alex = new BankAccount;
+//$alex->Withdraw(12);
+//$alex->DisplayBalance();
+
+
+class SavingAccount extends BankAccount {
+
+	}
+
+
+
+//$alex_saving = new SavingAccount;
+//$alex_saving->DisplayBalance();
+
+$alex = new BankAccount;
+$alex->Deposit(100);
+
+$alex_savings = new SavingAccount;
+$alex_savings ->Deposit(3000);
+
+echo $alex->DisplayBalance(). '<br>';
+echo $alex_savings->DisplayBalance();
+
+
+
+?>
+
+-------------------------------------------------------------------
+class DatabaseConnect{
+	public function __construct ($db_host, $bd_username, $db_password)
+	if(!@$this->Connect($db_host, $db_username, $db_pasword)) {
+
+		echo 'connection failed';
+
+		}else {
+
+		ehco 'connected to'.$db_host;
+
+		}
+
+
+
+
+	}
+
+
+	public function Connect ($bd_host, $db_username, $db_password) {
+
+
+
+
+	}
+-------------------------------------------------------------------
+Following code will be usefull, if you want to test inserting and displaying data in mysql db via PHP code,
+
+ 
+
+ <?php
+
+ $conn = mysql_connect("database_server","db_user","db_pwd");
+
+if(! $conn )
+
+{
+
+  die('Could not connect: ' . mysql_error());
+
+}
+
+mysql_select_db("buddi9u6_test", $conn);
+
+ 
+
+mysql_select_db("buddi9u6_test", $conn);
+
+$sql = "CREATE TABLE employee
+
+(
+
+emp_name varchar(15),
+
+emp_address varchar(15),
+
+emp_salary int
+
+)";
+
+ 
+
+// Execute query
+
+mysql_query($sql,$conn);
+
+ 
+
+$sq = 'INSERT INTO employee '.
+
+     '(emp_name,emp_address, emp_salary) '.
+
+      'VALUES ( "guest", "XYZ", 2000)';
+
+ 
+
+mysql_select_db('buddi9u6_test');
+
+$retval = mysql_query( $sq, $conn );
+
+if(! $retval )
+
+{
+
+  die('Could not enter data: ' . mysql_error());
+
+}
+
+echo "Entered data successfully\n";
+
+ 
+
+$result = mysql_query("SELECT * from employee");
+
+//While there are rows to display
+
+while($row = mysql_fetch_array($result)){
+
+ 
+
+$emp_name=$row["emp_name"];
+
+$emp_address=$row["emp_address"];
+
+$emp_salary=$row["emp_salary"];
+
+ 
+
+//Display the results from the current row and a line break
+
+echo "$emp_name <br> $emp_address <br> $emp_salary <br>";
+
+}
+
+mysql_close($conn);
+
+?>
+-------------------------------------------------------------------
+<html>
+
+<body>
+
+<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+
+Firstname: <input type="text" name="firstname">
+
+Lastname: <input type="text" name="lastname">
+
+Age: <input type="int" name="age">
+
+<input type="submit">
+
+</form>
+
+</body>
+
+</html>
+
+ 
+
+<?php
+
+ 
+
+$con=mysqli_connect("199.79.62.103","intimghd_test123","qwedsa@123","intimghd_test123");
+
+// Check connection
+
+if (mysqli_connect_errno())
+
+  {
+
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+
+  }
+
+ 
+
+ 
+
+ if (!empty($_POST["firstname"]) && !empty($_POST["lastname"]) && !empty($_POST["age"]))
+
+ 
+
+{
+
+ 
+
+$sql="INSERT INTO Persons (FirstName, LastName, Age)
+
+VALUES
+
+('$_POST[firstname]','$_POST[lastname]','$_POST[age]')";
+
+ 
+
+ 
+
+if (mysqli_query($con,$sql))
+
+  {
+
+  echo "</br>Entry added successfully </br>";
+
+  $fname = $lname = $age = "";
+
+  }
+
+ 
+
+}
+
+ 
+
+ $sql="CREATE TABLE IF NOT EXISTS Persons(FirstName CHAR(30),LastName CHAR(30),Age INT)";
+
+ 
+
+// Execute query
+
+if(mysqli_query($con,$sql))
+
+  {
+
+  echo "Table Persons :";
+
+  }
+
+$result = mysqli_query($con,"SELECT * from Persons");
+
+ 
+
+ 
+
+ 
+
+echo "<table border='1'>
+
+<tr>
+
+<th>Firstname</th>
+
+<th>Lastname</th>
+
+<th>Age</th>
+
+</tr>";
+
+ 
+
+while($row = mysqli_fetch_array($result))
+
+  {
+
+  echo "<tr>";
+
+  echo "<td>" . $row['FirstName'] . "</td>";
+
+  echo "<td>" . $row['LastName'] . "</td>";
+
+  echo "<td>" . $row['Age'] . "</td>";
+
+  echo "</tr>";
+
+  }
+
+echo "</table>";
+
+ 
+
+mysqli_close($con);
+
+ 
+
+?>
+-------------------------------------------------------------------
+<?php
+
+$con=mysqli_connect("localhost","root","wss","php_test");
+
+// Check connection
+
+if (mysqli_connect_errno())
+
+  {
+
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+
+  }
+
+ 
+
+ 
+
+ if (!empty($_POST["firstname"]) && !empty($_POST["lastname"]) && !empty($_POST["age"]))
+
+ 
+
+{
+
+ 
+
+$sql="INSERT INTO Persons (FirstName, LastName, Age)
+
+VALUES
+
+('$_POST[firstname]','$_POST[lastname]','$_POST[age]')";
+
+ 
+
+ 
+
+if (mysqli_query($con,$sql))
+
+  {
+
+  echo "</br>Entry added successfully </br>";
+
+  $fname = $lname = $age = "";
+
+  }
+
+ 
+
+}
+
+ 
+
+ $sql="CREATE TABLE IF NOT EXISTS Persons(FirstName CHAR(30),LastName CHAR(30),Age INT)";
+
+ 
+
+// Execute query
+
+if(mysqli_query($con,$sql))
+
+  {
+
+  echo "Table Persons :";
+
+  }
+
+$result = mysqli_query($con,"SELECT * from Persons");
+
+echo "<table border='1'>
+
+<tr>
+
+<th>Firstname</th>
+
+<th>Lastname</th>
+
+<th>age</th>
+
+</tr>";
+
+ 
+
+while($row = mysqli_fetch_array($result))
+
+  {
+
+  echo "<tr>";
+
+  echo "<td>" . $row['FirstName'] . "</td>";
+
+  echo "<td>" . $row['LastName'] . "</td>";
+
+  echo "<td>" . $row['Age'] . "</td>";
+
+  echo "</tr>";
+
+  }
+
+echo "</table>";
+
+ 
+
+mysqli_close($con);
+
+ 
+
+
+ 
+
+?>
+
+
+
+<html>
+
+<body>
+
+<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+
+Firstname: <input type="text" name="firstname">
+
+Lastname: <input type="text" name="lastname">
+
+Age: <input type="int" name="age">
+
+<input type="submit">
+
+</form>
+
+</body>
+
+</html>
+
+
+-------------------------------------------------------------------
+//initialize session
+
+$ch = curl_init(CURLOPT_URL, "http://localhost/jquery/data.php");
+
+//set options
+curl_setopt($ch, CURLOPT_URL, "http://localhost/jquery/data.php");
+
+//execute session
+curl_exec($ch);
+
+curl_close($ch);
+
+//session
+-------------------------------------------------------------------
+<html>
+<head>
+<title> Widget Corp </title>
+<link href="stylesheets/public.css" media="all" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+	<div id="header"></div>
+
+<div id="main">
+
+-------------------------------------------------------------------
+
+$ages = array (4,5,6,8,9,7,10,11);
+
+foreach($ages as $age)
+echo $age .",";
+
+-------------------------------------------------------------------
+//setcookie ('Test', 50, time()+(60*60*24*7));
+
+$var1 = $_COOKIE['Test'];
+echo $var1;
+
+setcookie ('Test', 0, time()-(60*60*24*7));
+-------------------------------------------------------------------
+$conn_error = ' Could not connect';
+
+$mysql_host = 'localhost';
+$mysql_user = 'root';
+$mysql_pass = 'wss';
+$mysql_db = 'widget_corp';
+
+mysql_connect($mysql_host, $mysql_user, $mysql_pass) or die ($conn_error);
+
+mysql_select_db ($mysql_db) or die ($conn_error);
+-------------------------------------------------------------------
+<?php require_once ("includes/functions.php") ;?>
+<?php require_once ("includes/connection.php") ;?>
+<?php include ("includes/header.php") ;?>
+
+	<table id="structure">
+		<tr>
+
+			<td id="navigation">
+
+				<?php
+
+				//3. Perform database query
+
+				$result = mysql_query("SELECT * FROM subjects");
+				if (!$result) { die ("Database Query failed: " . mysql_error()); }
+				
+				//4. Use Returned data
+				while ($row = mysql_fetch_array($result)) {
+
+					echo $row['menu_name']."".$row['position']."<br />";
+
+					}
+
+				?>
+
+			</td>
+
+			<td id="page">
+				
+			<h2> Content Area</h2>
+			
+			</td>
+		</tr>
+
+	</table>
+
+
+<?php include ("includes/footer.php") ;?>
+
+-------------------------------------------------------------------
+X = raw_input ("Enter name: ")
+print " Hey" + x
+raw_input ("press<enter>")
+-------------------------------------------------------------------
+class Person {
+
+	public $name;
+	public $age;
+
+	public function sentence() {
+		return $this->name . ' is ' . $this->age. ' year old';
+
+		}
+
+	}
+
+
+
+$Person = new Person;
+$Person->name = ' John';
+$Person-> age = 20;
+
+
+echo $Person->sentence();
+
+-------------------------------------------------------------------
+<?php
+class vehicle{
+/*** define public properties ***/
+
+/*** the color of the vehicle ***/
+public $color;
+
+/*** the number of doors ***/
+public $num_doors;
+
+/*** the price of the vehicle ***/
+public $price;
+
+/*** the shape of the vehicle ***/
+public $shape;
+
+/*** the brand of vehicle ***/
+public $brand;
+
+/*** the constructor ***/
+public function __construct(){
+  echo 'About this Vehicle.<br />';
+}
+
+/*** define some public methods ***/
+
+/*** a method to show the vehicle price ***/
+public function showPrice(){
+  echo 'This vehicle costs '.$this->price.'.<br />';
+}
+
+/*** a method to show the number of doors ***/
+public function numDoors(){
+  echo 'This vehicle has '.$this->num_doors.' doors.<br />';
+}
+
+/*** method to drive the vehicle ***/
+public function drive(){
+  echo 'VRRROOOOOOM!!!';
+}
+
+} /*** end of class ***/
+?>
+-------------------------------------------------------------------
+<?php
+/*
+class Person {
+
+	public $name;
+	public $age;
+
+	public function sentence() {
+		return $this->name . ' is ' . $this->age. ' year old';
+
+		}
+	}
+
+$Person = new Person;
+$Person->name = ' John';
+$Person-> age = 20;
+
+
+echo $Person->sentence();
+*/
+
+?>
+
+<?php
+class vehicle{
+/*** define public properties ***/
+
+/*** the color of the vehicle ***/
+public $color;
+
+/*** the number of doors ***/
+public $num_doors;
+
+/*** the price of the vehicle ***/
+public $price;
+
+/*** the shape of the vehicle ***/
+public $shape;
+
+/*** the brand of vehicle ***/
+public $brand;
+
+/*** the constructor ***/
+public function __construct(){
+  echo 'About this Vehicle.<br />';
+}
+
+/*** define some public methods ***/
+
+/*** a method to show the vehicle price ***/
+public function showPrice(){
+  echo 'This vehicle costs '.$this->price.'.<br />';
+}
+
+/*** a method to show the number of doors ***/
+public function numDoors(){
+  echo 'This vehicle has '.$this->num_doors.' doors.<br />';
+}
+
+/*** method to drive the vehicle ***/
+public function drive(){
+  echo 'VRRROOOOOOM!!!';
+}
+
+} /*** end of class ***/
+
+
+class test extends vehicle{
+
+	}
+
+	
+$vehicle = new vehicle;
+$test = new test;
+echo $test->showPrice();
+?>
+
+
+
+
+
+
+-------------------------------------------------------------------
+12.1.2014 - pracise session
+
+
+$test = " Hello World";
+
+echo $test . ' again <br/>';
+
+echo "$test again <br/> " ;
+
+echo " {$test} again ";
+
+-------------------------------------------------------------------
+$firststring = "The quick brown fox";
+$secondstring = "jumped over the lazy dog";
+
+// variable conctation
+$thirdstring = $firststring;
+$thirdstring .= $secondstring;
+
+echo $thirdstring;
+
+-------------------------------------------------------------------
+$firststring = "The quick brown fox";
+$secondstring = "jumped over the lazy dog";
+
+// variable conctation
+$thirdstring = $firststring;
+$thirdstring .= $secondstring;
+
+echo $thirdstring;
+
+-------------------------------------------------------------------
+/*
+$array1 = array(4,8,15,16,23,42);
+echo $array1[0]; echo '<br/>';
+
+$array2 = array(6,"fog", "dog", array("x", "y", "z"));
+echo $array2[3] [1];
+
+$array2[3] = "Cat";
+
+echo $array2[3];
+echo "<br/>";
+*/
+
+$array2 = array(6,"fog", "dog", array("x", "y", "z"));
+
+$array3 = array ("First_name"=> "kevin", "Last_name"=>"Skoglund");
+//echo $array3["First_name"]." ".$array3["Last_name"];
+
+
+<pre> print_r($array2) <pre>;
+-------------------------------------------------------------------
+$max_width = 980;
+define("MAX_WIDTH", 980);
+echo MAX_WIDTH;
+
+-------------------------------------------------------------------
+$a = 1;
+$b = 5;
+
+if (($a > $b) && ($a > $b)) {
+
+	echo "a is greater than b ";
+
+	} else {
+
+	echo " a is not greater than b";
+		}
+
+-------------------------------------------------------------------
+$ages = array (4,8,15,16,23,42);
+
+foreach ($ages as $age) {
+
+		echo $age. "." ;
+
+	}
+echo  "<br/>";
+foreach($ages as $position => $age) {
+
+	echo $position. ":".$age. "<br />";
+
+	}
+-------------------------------------------------------------------
+for ($count=0; $count<=10; $count++) {
+	if($count==5){
+		continue;
+		}
+
+		echo $count. ",";
+		
+	}
+-------------------------------------------------------------------
+for ($count=0; $count<=10; $count++) {
+	echo $count;
+	if($count ==10) {break;}
+	echo ",";
+
+-------------------------------------------------------------------
+for ($count=0; $count<=10; $count++) {
+	echo $count;
+	if($count ==10) {break;}
+	echo ",";
+
+}
+-------------------------------------------------------------------
+$ages = array(4,8,15,16,23,42); 
+
+echo "0:".current($ages). "<br />";
+next($ages);
+echo "1:".current($ages). "<br />";
+echo "2:".current($ages). "<br />";
+echo "3:".current($ages). "<br />";
+reset($ages);
+
+-------------------------------------------------------------------
+$ages = array(4,8,15,16,23,42); 
+
+while($age = current($ages)){
+	echo $age. ",";
+	next($ages);
+
+	}
+
+-------------------------------------------------------------------
+<?php
+
+class TV {
+	public $model = 'xyz';
+	Public $volume = 1;
+
+	function volumeup(){
+
+		$this->volume++;
+		}
+	function volumedown(){
+
+		$this->volume--;
+		}
+}
+
+$tv_one = new TV;
+$tv_two = new TV;
+
+$tv_one->volumeup();
+$tv_two->volumeup();
+
+
+echo $tv_one->volume;
+
+echo "<br>";
+
+echo $tv_two->volume;
+
+echo "<br>";
+$tv_one->volumedown();
+echo "<br>";
+echo $tv_one->model;
+
+
+?>
+
+
+-------------------------------------------------------------------
+class TV {
+
+private $model;
+public $volume;
+
+function volumeup() {
+
+	$this->volume++;
+	}
+
+function volumedown(){
+
+	$this->volume--;
+	}
+
+function __construct($m, $v) {
+
+	$this->model =$m;
+	$this->volume =$v;
+
+	}
+function getmodel()
+{
+return $this->model;
+}
+}
+
+$tv = new TV ('abc', 3);
+
+echo $tv->getmodel();
+-------------------------------------------------------------------
+interface abc {
+
+public function tets();
+public function xyz();
+}
+
+
+class def implements abc {
+
+	public function tets(){ echo ' H';}
+	public function xyz() {echo 't';}
+
+	}
+
+-------------------------------------------------------------------
+
+class abc{
+
+public static $objectCount = 0;
+public static function getCount(){
+
+	return self::$objectCount;
+	}
+
+public function __construct(){
+
+	self::$objectCount++;
+	}
+
+
+}
+
+$a = new abc();
+$b = new abc();
+$c = new abc();
+$d = new abc();
+echo abc::getCount();
+
+
+-------------------------------------------------------------------
+//$name = 0;
+//$name= 'mehmood';
+
+function letitgo($name){
+
+	echo "Let it go {$name}";
+
+	}
+letitgo("mehmood");
+-------------------------------------------------------------------
+
+function addition ($var1, $var2){
+	$sum = $var1 + $var2;
+	return  $sum;
+	
+	}
+
+
+//$test = addition(5,3);
+//echo $test;
+
+if (addition(5,3) == 8) {
+
+	echo "its elven";
+	
+	}
+
+echo "<br/>";
+
+
+function add_subt($val1, $val2) {
+
+	$add = $val1 + $val2;
+	$subt = $val1- $val2;
+	$result = array($add, $subt);
+	return $result;
+
+	}
+
+$result_array = add_subt(10,5);
+echo "Add:" . $result_array [0];echo "<br/>";
+echo "Subt:" . $result_array [1];
+-------------------------------------------------------------------
+$bar = "outside";
+
+function foo() {
+	//global $bar;
+	$bar = "inside";
+	echo $bar;
+	
+	}
+
+foo();
+
+-------------------------------------------------------------------
+function paint($color= "red"){
+
+	echo " The color of the room is {$color}";
+
+	}
+
+paint("test");
+-------------------------------------------------------------------
+$test = "test";
+
+function paint($room = "office", $color= "red"){
+
+	echo " The color of the {$room} is {$color}";
+
+	}
+
+paint("bedoorm","blue");
+
+-------------------------------------------------------------------
+//print_r($_GET);
+$id= $_GET['id'];
+$name= $_GET['name'];
+echo $id;
+echo $name;
+
+echo "<br />";
+
+$string = "kevin skog";
+echo urlencode($string);
+echo "<br />";
+echo rawurlencode($string);
+
+-------------------------------------------------------------------
+if(1==2) echo " test";
+else if (2==3) echo "test2";
+else echo " This is test";
+
+-------------------------------------------------------------------
+$username = $_POST['username'];
+$password = $_POST['password'];
+
+echo "{$username} : {$password}";
+
+?>
+
+
+
+<form action = "test2.php" method="POST">
+Username: <input type="text" name="username" value="" /> </br>
+Password: <input type="password" name="password" value="" /> </br>
+<input type="submit" name="submit" value="Submit" /> </br>
+</form>
+-------------------------------------------------------------------
+$username = $_POST['username'];
+$password = $_POST['password'];
+
+echo "{$username} : {$password}";
+
+?>
+
+
+
+<form action = "test2.php" method="POST">
+Username: <input type="text" name="username" value="" /> </br>
+Password: <input type="password" name="password" value="" /> </br>
+<input type="submit" name="submit" value="Submit" /> </br>
+</form>
+
+-------------------------------------------------------------------
+//$var = 0;
+
+setcookie ('mehmood', 45, time()+(60*60*24*7));
+if(isset($_COOKIE['mehmood'])) {
+	$var1 = $_COOKIE['mehmood'];
+	echo $var1;
+
+	}
+
+
+
+//setcookie ('mehmood', 00, time()-(60*60*24*7));
+-------------------------------------------------------------------
+session_start();
+
+$_SESSION['name']= "kevin";
+
+$name= $_SESSION['name'];
+echo $name;
+-------------------------------------------------------------------
+//header("Content-type:application/pdf");
+
+//header("HTTP/1.0 404 not found");
+//exit;
+
+header("Location: test.php ");
+
+-------------------------------------------------------------------
+//create a database connection
+$connection = mysql_connect("localhost", "root", "wss");
+if(!$connection){
+	die("Database connection failed:" . mysql_error());
+	}
+
+//select a database to use.
+$db_select = mysql_select_db("repmydb", $connection);
+if(!$db_select) {
+	die("Database selection failed:" . mysql_error());
+
+	}
+
+
+//Peform database query
+$result = mysql_query("SELECT * FROM demo", $connection);
+if(!$result) {
+	die("Database query failed:" . mysql_error());
+
+	}
+
+
+//use returned data
+while($row= mysql_fetch_array($result)) {
+
+		echo $row[1]." ".$row[2]."<br/>";
+
+	}
+
+//close connection
+mysql_close($connection);
+-------------------------------------------------------------------
+<?php
+$con=mysqli_connect("asterisk.internal.directi.com","rouser","Re3dOnl7","asterisk");
+// Check connection
+if (mysqli_connect_errno()) {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+}
+
+$result = mysqli_query($con,"SELECT * FROM agent_status where queue in ('support_nation_queue','techsupport_queue') and agentstatus = 'LOGIN'");
+
+echo "<table border='2'>
+<tr>
+<th>AGENT</th>
+<th>QUEUE</th>
+<th>AGENTSTATUS</th>
+<th>TIMESTAMP</th>
+
+
+</tr>";
+
+while($row = mysqli_fetch_array($result)) {
+  echo "<tr>";
+  echo "<td>" . $row['agent'] . "</td>";
+  echo "<td>" . $row['queue'] . "</td>";
+   echo "<td>" . $row['agentstatus'] . "</td>";
+  echo "<td>" . $row['timestamp'] . "</td>";
+  echo "</tr>";
+}
+
+echo "</table>";
+
+mysqli_close($con);
+?>
+
+
+-------------------------------------------------------------------
+<?php
+//create a database connection
+$connection = mysql_connect("localhost", "root", "wss");
+if(!$connection){
+	die("Database connection failed:" . mysql_error());
+	}
+
+//select a database to use.
+$db_select = mysql_select_db("repmydb", $connection);
+if(!$db_select) {
+	die("Database selection failed:" . mysql_error());
+
+	}
+
+
+//Peform database query
+$result = mysql_query("SELECT * FROM demo", $connection);
+if(!$result) {
+	die("Database query failed:" . mysql_error());
+
+	}
+
+
+echo "<table border='2'>
+<tr>
+<th>Firstname</th>
+<th>Secondname</th>
+</tr>";
+
+
+
+//use returned data
+while($row= mysql_fetch_array($result)) {
+
+	//echo $row["Firstname"]." ".$row["Secondname"]."<br/>";
+	echo "<tr>";
+    echo "<td>" . $row['Firstname'] . "</td>";
+	echo "<td>" . $row['Secondname'] . "</td>";
+	echo "</tr>";
+	}
+
+
+echo "</table>";
+
+//close connection
+//mysql_close($connection);
+	
+
+
+
+
+
+
+?>
+
+-------------------------------------------------------------------
+$count=0;
+while($count<=10) {
+	echo $count;
+	$count++;
+
+	}
+-------------------------------------------------------------------
+for($count=0; $count<=10; $count++){
+
+	echo $count. ",";
+	
+	}
+-------------------------------------------------------------------
+<!DOCYTPE HTML>
+<html>
+<head>
+<meta http=equiv="Content="text/html"; charset=utf-8">
+<title> My Shop</title>
+</head>
+<body>
+
+
+<h1> Hello World</h1>
+
+
+</body>
+</html>
+
+
+-------------------------------------------------------------------
+$ages = array(4,8,15,16,23,42);
+
+foreach ($ages as $age) {
+
+		echo $age. ".";
+
+	}
+
+/*
+while($row= mysql_fetch_array($result)) {
+
+	//echo $row["Firstname"]." ".$row["Secondname"]."<br/>";
+	echo "<tr>";
+    echo "<td>" . $row['Firstname'] . "</td>";
+	echo "<td>" . $row['Secondname'] . "</td>";
+	echo "</tr>";
+	}
+*/
+
+-------------------------------------------------------------------
+
+						<li><a href="#"> Mobile </a></li>
+						<li><a href="#"> Cameras </a></li>
+						<li><a href="#"> Tablets </a></li>
+						<li><a href="#"> Computer </a></li>
+						<li><a href="#"> Android </a></li>
+
+<!DOCYTPE HTML>
+<html>
+<head>
+<meta http=equiv="Content="text/html"; charset=utf-8">
+<title> My Shop</title>
+</head>
+<body>
+
+
+<table width="700" align="center" border="-2">
+
+<tr> <td>One</td> <td>1     </td> <td>Ek          </td> </tr>
+<tr> <td>Two</td><td>2      </td> <td>Do         </td></tr>
+<tr> <td>Three</td><td>3    </td> <td>Teen       </td>  </tr>
+
+
+<tr> <td>1</td></tr>
+<tr> <td>2</td></tr>
+<tr> <td>3</td> </tr>
+</table>
+
+
+
+</body>
+</html>
+-------------------------------------------------------------------
+<!DOCYTPE HTML>
+<html>
+<head>
+<meta http=equiv="Content="text/html"; charset=utf-8">
+<title> My Shop</title>
+</head>
+<body>
+
+
+<table width="700" align="center" border="-2">
+
+<tr> <td>One</td> <td>1     </td> <td>Ek          </td> </tr>
+<tr> <td>Two</td><td>2      </td> <td>Do         </td></tr>
+<tr> <td>Three</td><td>3    </td> <td>Teen       </td>  </tr>
+
+
+<tr> <td>1</td></tr>
+<tr> <td>2</td></tr>
+<tr> <td>3</td> </tr>
+</table>
+
+
+
+</body>
+</html>
+
+-------------------------------------------------------------------
+$a = 10;
+
+switch($a) {
+	case 0: echo "a not equal to 0";
+	break;
+	case 1: echo "a not equal to 1";
+	break;
+	case 2: echo "a not equal to 2";
+	break;
+	case 3: echo "a equal to 3";
+	break;
+	default: echo "Tu Pagal Hai Value Tu Diya Nahi";
+	
+	}
+-------------------------------------------------------------------
+$message="Mizan";
+$$message= "is a moderator of PhpExpert";
+echo $$message;
+
+-------------------------------------------------------------------
+//$data['MyValue'] = "Some String";
+		//$data['AnotherValue'] = "Another String";
+
+		//$this->load->model('siet_model');
+		//$this->load->view('home', $data);
+		
+		$this->load->model('site_model')
+		//$data['records'] = $this->site_model->GetAll();
+		$this->load->view('home');
+	}
+
+	//function about() {
+
+	//	$this->load->view('about');
+	//}
+
+
+
+
+-------------------------------------------------------------------
+	function index() {
+
+			$this->load->model('data_model');
+			$data['rows']= $this->data_model->getAll();
+
+			$this->load->view('home');
+
+		}
+
+-------------------------------------------------------------------
+
+function index () {
+
+		$this->load->view('home');
+
+		$this->load->view('about');
+
+		$this->load->view('test');
+
+	//	$this->load->model('test2');
+
+
+
+		}
+		
+			
+
+
+		
+
+
+/*		function about() {
+
+			
+
+		}
+
+
+
+		function test() {
+
+		$this->load->view('test');
+
+		}
+
+
+*/
+-------------------------------------------------------------------
+$ages = array(4,8,15,16,23,42);
+
+foreach ($ages as $age) {
+
+		echo $age.",";
+
+	}
+
+foreach ($ages as $position=>$age){
+
+		echo $position. ":".$age. "<br/>";
+
+	}
+
+-------------------------------------------------------------------
+29.01.2015
+JAVA:
+class apples {
+
+	public static void main(String args []) {
+
+		System.out.println("Hello World!");
+		}
+
+
+	}
+
+-------------------------------------------------------------------
+public class Apples {
+	
+	
+	public static void main(String args []) {
+
+		System.out.println("Hello World!");
+		}
+
+
+}
+
+-------------------------------------------------------------------
+package bucky;
+
+public class Apples {
+	
+	
+	public static void main(String args []) {
+			
+		double tuna;
+		tuna = 5.28;
+		
+		System.out.print("I want ");
+		System.out.print(tuna);
+		System.out.println("movies");
+		System.out.print("apples");
+		
+		}
+
+
+}
+
+-------------------------------------------------------------------
+package bucky;
+import java.util.Scanner;
+
+public class Apples {
+	
+	
+	public static void main(String args []) {
+			
+		Scanner bucky = new Scanner (System.in);
+		System.out.println(bucky.nextLine());
+		
+		
+		}
+
+
+}
+-------------------------------------------------------------------
+package bucky;
+import java.util.Scanner;
+
+public class Apples {
+	
+	
+	public static void main(String args []) {
+			
+		Scanner bucky = new Scanner (System.in);
+		double fnum, snum, answer;
+		System.out.println("Enter First Num:");
+		fnum = bucky.nextDouble();
+		System.out.println("Enter Second Num:");
+		snum = bucky.nextDouble();
+		answer = fnum + snum;
+		System.out.println(answer);
+		}
+
+
+}
+
+-------------------------------------------------------------------
+package bucky;
+import java.util.Scanner;
+
+public class Apples {
+	
+	
+	public static void main(String args []) {
+		Scanner bucky = new Scanner (System.in);
+		
+		int girls, boys, people;
+		girls = 6;
+		boys = 3;
+		people = girls + boys;
+	
+		System.out.println(people);
+		}
+
+
+}
+
+-------------------------------------------------------------------
+package bucky;
+import java.util.Scanner;
+
+public class Apples {
+	
+	
+	public static void main(String args []) {
+		Scanner bucky = new Scanner (System.in);
+		int tuna = 5;
+		int bass = 18;
+		System.out.println(--tuna);
+		System.out.println(tuna);
+		-------------
+		
+	public static void main(String args []) {
+		Scanner bucky = new Scanner (System.in);
+		int tuna = 5;
+		int bass = 18;
+		
+		tuna +=8;
+		
+		System.out.println(tuna);	
+		
+		
+		}
+
+
+}
+
+-------------------------------------------------------------------
+package bucky;
+
+public class tuna {
+	
+		public void simpleMessage() {
+			
+			System.out.println("This is another calss");
+			
+		}
+	
+
+}
+
+-------------------------------------------------------------------
+
+
+package bucky;
+
+public class tuna {
+	private String girlName; 
+	
+	public void setName(String name){
+		
+		girlName = name;
+						
+	}
+	
+	public String getName() {
+		
+		return girlName;
+	}
+	
+	public void saying(){
+		
+		System.out.printf("Your first gt was %s", getName());
+		
+	}
+		
+
+}
+
+----------
+package bucky;
+import java.util.Scanner;
+
+public class Apples {
+	
+	
+	public static void main(String args []) {
+	
+		Scanner input = new Scanner(System.in);
+		tuna tunaObject = new tuna();
+		
+		
+		System.out.println("Enter name of first gf here:");
+		String temp = input.nextLine();
+		tunaObject.setName(temp);
+		tunaObject.saying();
+
+	}
+}
+-------------------------------------------------------------------
+package bucky;
+
+public class tuna {
+	private String girlName; 
+	
+	public void setName(String name){
+		
+		girlName = name;
+						
+	}
+	
+	public String getName() {
+		
+		return girlName;
+	}
+	
+	public void saying(){
+		
+		System.out.printf("Your first gt was %s", getName());
+		
+	}
+		
+
+}
+
+-------------------------------------------------------------------
+tuna.java
+package bucky;
+
+public class tuna {
+	private String girlName; 
+	
+	public void setName(String name){
+		
+		girlName = name;
+						
+	}
+	
+	public String getName() {
+		
+		return girlName;
+	}
+	
+	public void saying(){
+		
+		System.out.printf("Your first gt was %s", getName());
+		
+	}
+		
+
+}
+
+-------------------------------------------------------------------
+//$read = readfile("webdictionary.txt");
+//echo  $read;
+
+
+//$myfile = fopen("webdictionary.txt", "r") or die("Unable to open");
+
+//echo fread($myfile,filesize("webdictionary.txt"));
+
+
+//echo "<br>";
+//echo fgets($myfile);
+//fclose($myfile);
+
+
+
+$myfile = fopen("texttext.txt", "a");
+
+$txt = " My name is khan \n";
+
+fwrite ($myfile, $txt);
+fclose($myfile);
+
+
+
+-------------------------------------------------------------------
+<?php
+
+$fruits = array("d"=>"lemon", "a"=>"orange", "b"=>"banana", "c"=>"apple");
+krsort($fruits);
+foreach ($fruits as $key => $val) {
+    echo "$key = $val\n";
+   
+}
+
+?>
+
+<br><br>
+
+<?php
+$keys = array('foo', 5, 10, 'bar');
+$a = array_fill_keys($keys, 'banana');
+print_r($a);
+?>
+
+<br><br>
+<?php
+
+
+$a = array(0,1,2,3,4,5,6,7,8,9);
+print_r ($a);
+
+?>
+
+<br><br>
+
+-------------------------------------------------------------------
+<?php
+
+
+$people = array(
+
+			array(
+			'name' =>'bob',
+			'shopping_list' => array('fruit','veg', 'milk')
+			),
+	
+			array(
+
+			'name'=> 'dave',
+			'shopping_list'=> array('veg', 'milk')
+			),
+
+			
+			array(
+			'name'=> 'jim',
+			'shopping_list'=> array('milk')
+			)
+
+
+			);
+
+
+
+
+	foreach ($people as $person ){
+
+		echo ($person['name'] . '<br>');
+
+
+		}
+				
+
+
+echo '<br> ';
+
+	for($i=0; $i < count($people); $i++) {
+
+		echo ($i . '<br>');
+		}
+
+
+echo '<br> ';
+
+$arr = array(
+
+		"name"=> "John Morris",
+		"age"=> "29",
+		"state"=>"texas",
+		"website"=>"http://www.google.com"
+		);
+
+
+		var_dump($arr);
+
+		echo '<br> ';
+
+		foreach ($arr as $key=>$value) {
+	
+			echo '<p>' . $key .':' . $value. '</p>';
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+?>
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+

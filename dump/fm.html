@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html/charset=UTF-8" />
+<title> SLO Matrix </title>
+<style type=text/css'>
+
+table {
+border-collapse: collapse;
+border: 1px solid black;
+} // style for thin border around the cells and collapse
+th {
+border: 1px solid black;
+width: 10%;
+} 
+td {
+width: 10%;
+border: 1px solid black;
+} // width for left columns
+
+
+</style>
+</head>
+<form action="/process.php" method="get"slomatrix">
+<table cellspacing="1">
+<caption>
+SLO Matrix
+</caption>
+<tr>
+<th scope="col"> Name </th>
+<th scope="col"> Course </th>
+<th scope="col"> Old SLO </th>
+<th scope="col"> Updated SLO </th>
+</tr>
+<tr>
+<td><input type="text" name"teacherName1" /></td>
+<td><input type="text" name"courseName1" /></td>
+<td><input type="text" name"oldSlo1" /></td>
+<td><input type="text" name"updatedSlo1" /></td>
+</tr>
+<tr>
+<td><input type="text" name"teacherName2" /></td>
+<td><input type="text" name"courseName2" /></td>
+<td><input type="text" name"oldSlo2" /></td>
+<td><input type="text" name"updatedSlo2" /></td>
+</tr>
+</table>
+<input type="submit" class="save" value="Save" />
+</form>
+
+<body>
+</body>
+</html>

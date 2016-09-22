@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/javascript" >
+function myfunction ()
+{
+document.getElementById("demo").innerHTML="My first java script function";
+}
+</script>
+
+
+</head>
+<body>
+
+<p>
+JavaScript can write directly into the HTML output stream:
+</p>
+
+<script>
+document.write("<h1>This is a heading</h1>");
+document.write("<p>This is a paragraph.</p>");
+</script>
+
+
+//<script>
+//alert ("My First js");
+</script>
+
+<h1>My Web Page</h1>
+
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+<p>
+You can only use <strong>document.write</strong> in the HTML output.
+If you use it after the document has loaded (e.g. in a function), the whole document will be overwritten.
+</p>
+
+</body>
+</html>
